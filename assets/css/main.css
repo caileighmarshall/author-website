@@ -110,8 +110,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: solid 1px #e4e4e4; TODO
-		color: #7363ac !important;
+		border-bottom: solid 1px #e4e4e4;
 		text-decoration: none;
 	}
 
@@ -119,6 +118,10 @@ input, select, textarea {
 			border-bottom-color: transparent;
 			color: #502D84 !important;
 		}
+	
+	a.link {
+		color: #7363ac !important;
+	}
 
 	strong, b {
 		color: #7363ac;
