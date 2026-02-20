@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7362ac",
+                        "deep-purple": "#431c7d",
+                        "background-light": "#f7f6f7",
+                        "background-dark": "#17161c",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .book-shadow {
+            box-shadow: 15px 15px 30px rgba(67, 28, 125, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation Header -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">auto_stories</span>
+<h1 class="text-deep-purple dark:text-primary text-xl font-bold tracking-tight">Elena Thorne</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Books</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Series</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Newsletter</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
+<input class="pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-full text-sm focus:ring-2 focus:ring-primary w-48 lg:w-64" placeholder="Find a book..." type="text"/>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto px-6 lg:px-20 py-12">
+<!-- Breadcrumbs -->
+<nav class="flex gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<a class="hover:text-primary" href="#">Home</a>
+<span>/</span>
+<a class="hover:text-primary" href="#">Books</a>
+<span>/</span>
+<span class="text-deep-purple dark:text-primary font-medium">Whispers in the Rain</span>
+</nav>
+<!-- Book Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mb-20">
+<!-- Book Cover -->
+<div class="lg:col-span-5 flex justify-center lg:justify-start">
+<div class="relative group max-w-[400px] w-full">
+<div class="aspect-[2/3] w-full rounded-lg book-shadow overflow-hidden bg-slate-200 transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="Romance novel cover featuring a couple in the rain with purple atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIl8Rx1MIemo56OuwFZWilOHjEl4dpiufpy4uCz8MhsDCPXnznMINROaTqjZLguEKyHUMspZsyak0uk-a2_QMNwWqz_M7k3RCDxAu-ICFNg7MwRa2B9BC0KuAqj03S-QVwSOUGMrDWDTwuPg65QyDjfJeJX0EcWaLownD6U_8XEW2p3UkOp4vMczY6aD8nUkD9PmmsyqccBJNT6G-dflTIHuTAwL9-vRI9_xTHAz5LfRfDdoJ5neaGcdYzPrwANNdj7M0uSqAUZq4"/>
+</div>
+<div class="absolute -bottom-4 -right-4 bg-primary text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+                            New Release
+                        </div>
+</div>
+</div>
+<!-- Book Details -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="mb-6">
+<h2 class="font-serif text-5xl lg:text-6xl text-deep-purple dark:text-slate-100 leading-tight mb-4">Whispers in the Rain</h2>
+<div class="flex flex-wrap items-center gap-4 text-slate-600 dark:text-slate-400">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Contemporary Romance</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                                Published October 2023
+                            </span>
+<span class="flex items-center gap-1 text-amber-500">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star_half</span>
+<span class="text-slate-900 dark:text-slate-100 font-bold ml-1 text-sm">4.8 (1.2k reviews)</span>
+</span>
+</div>
+</div>
+<!-- Synopsis -->
+<div class="prose prose-slate dark:prose-invert max-w-none mb-10">
+<p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300">
+                            He was a architect who only built walls around his heart. She was a landscape artist who knew that even the toughest soil could bloom with enough care. When a storm strands them in a remote cabin in the Pacific Northwest, the only thing more dangerous than the elements is the truth they've both been hiding.
+                        </p>
+<p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 mt-4">
+                            Julian Vance doesn't do "forever." Maya Sterling doesn't do "temporary." But as the rain drums against the roof, the whispers of what could be become too loud to ignore. In this heart-wrenching tale of second chances and hidden scars, two souls learn that sometimes the best way to move forward is to let the rain wash everything else away.
+                        </p>
+</div>
+<!-- Buy Buttons -->
+<div class="flex flex-col gap-4">
+<h3 class="text-sm font-bold text-slate-900 dark:text-slate-100 uppercase tracking-widest">Available at Retailers</h3>
+<div class="flex flex-wrap gap-3">
+<button class="flex items-center gap-3 px-6 py-3 bg-primary text-white rounded-lg font-bold hover:bg-deep-purple transition-all shadow-md">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                Amazon Kindle
+                            </button>
+<button class="flex items-center gap-3 px-6 py-3 bg-white dark:bg-slate-800 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary/5 transition-all">
+                                Barnes &amp; Noble
+                            </button>
+<button class="flex items-center gap-3 px-6 py-3 bg-white dark:bg-slate-800 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary/5 transition-all">
+                                Apple Books
+                            </button>
+<button class="flex items-center gap-3 px-6 py-3 bg-white dark:bg-slate-800 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary/5 transition-all">
+                                Kobo
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Reader Reviews Section -->
+<section class="py-16 border-t border-primary/10">
+<div class="flex items-center justify-between mb-10">
+<h3 class="font-serif text-3xl text-deep-purple dark:text-slate-100">Reader Reviews</h3>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline">
+                        Write a Review <span class="material-symbols-outlined">edit_note</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-primary/5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">SJ</div>
+<div>
+<p class="font-bold text-sm">Sarah Jenkins</p>
+<p class="text-xs text-slate-500">Verified Purchase</p>
+</div>
+</div>
+<div class="flex text-amber-500 text-sm">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic">"I couldn't put this down! Elena Thorne has a way of making you feel every single emotion. The cabin scene was absolutely breathtaking. Highly recommend!"</p>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-primary/5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">MR</div>
+<div>
+<p class="font-bold text-sm">Michael Reed</p>
+<p class="text-xs text-slate-500">ARC Reader</p>
+</div>
+</div>
+<div class="flex text-amber-500 text-sm">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic">"A masterpiece of contemporary romance. Julian's character growth was so authentic and Maya is the relatable heroine we all need. 5 stars!"</p>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-primary/5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">LC</div>
+<div>
+<p class="font-bold text-sm">Lily Chen</p>
+<p class="text-xs text-slate-500">Goodreads Reviewer</p>
+</div>
+</div>
+<div class="flex text-amber-500 text-sm">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star_half</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-300 italic">"The tension was perfect! Thorne's writing is lyrical and evocative. I'm already pre-ordering the next book in the series."</p>
+</div>
+</div>
+</section>
+<!-- More by Author Carousel -->
+<section class="py-16 border-t border-primary/10">
+<div class="flex items-center justify-between mb-10">
+<h3 class="font-serif text-3xl text-deep-purple dark:text-slate-100">More by Elena Thorne</h3>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Related Book 1 -->
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="aspect-[2/3] w-full rounded-lg overflow-hidden bg-slate-200 shadow-md transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Related Book 1" class="w-full h-full object-cover" data-alt="Romance book cover showing an abstract purple sunset pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-G9Qr0Zth-r-FX6djntfY7Jcdow5jPxsHcVIQIl5wpdKucqCOBBsGqO1vLyu2f_xuYee7-864GGluKiFLMhxsbTpBdvz3n3NaF4yF5XxHYb-TvJoF-dV0XlUYPYeErjwuIf1X8DeXsrmQjWPMB7KUagzw9Z4sZe3M92OgkeMevk6MY1rl1RKo3Nhxa8Yx3V2LtdRt9TiCvm6WFqnD86c7j1rvNiLpTc5XdeCd2x7KITVkdO1t6SnsUz2z4VhcFG2sHZ1WTgh65n8"/>
+</div>
+<div>
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Sunset Souls</h4>
+<p class="text-xs text-slate-500">The Horizon Series #1</p>
+</div>
+</div>
+<!-- Related Book 2 -->
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="aspect-[2/3] w-full rounded-lg overflow-hidden bg-slate-200 shadow-md transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Related Book 2" class="w-full h-full object-cover" data-alt="Book cover with a soft lavender floral motif and elegant typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDWweFtH7-v0PKPR1d8dlSNQJ7Efd6T0waATB2dgGpvAu1nu1ItbCK7umnoRkXBa_BTW0ViGYwy6NrYfWj8yAC-TXyJ3DPsbXz2RZDQIZKSCiikp6AdviKs7aFwuO_C8vSwDfwcFWbRuTGBM8ZPmBzluv6i6GVNfpWW5LXXLhHV801FjksF4kLcUOFKebS_tLsXaJf7V3v1bffwTtPCiOsTEtQd4BZbAhY4_n-NtHt6vjKkCGmUPEc8r29ztjisj2HdHBXojuxpA8"/>
+</div>
+<div>
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Wildflower Hearts</h4>
+<p class="text-xs text-slate-500">The Horizon Series #2</p>
+</div>
+</div>
+<!-- Related Book 3 -->
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="aspect-[2/3] w-full rounded-lg overflow-hidden bg-slate-200 shadow-md transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Related Book 3" class="w-full h-full object-cover" data-alt="Romance novel cover with a starry night background in shades of violet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-7hNwX_X_1NS0p1htmNtiGwyMS5ZQb_wD6JXLj6GtijCcBY3_Bkyi22Lp43uWoJC9KPXVv-E-xh_VEcyA_UCbHw364XiR7GdTFcdA0mqOxplCrL0eiW2NB8SgAB2jWJ-uIlJkSbUDsqhujp4BY4bC3OGS4cfRtBm2ymm3J15ScMESR2Z2AS_yuA6_Zhvm5szBybz0HI2kQMDZ3PHk5BrncjJTf9t-oKSSl0GeJhyEYn8GLLcIAsVkWJXIg9KrYT-4vCBJALw6sQ"/>
+</div>
+<div>
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Midnight Promises</h4>
+<p class="text-xs text-slate-500">Standalone Romance</p>
+</div>
+</div>
+<!-- Related Book 4 -->
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="aspect-[2/3] w-full rounded-lg overflow-hidden bg-slate-200 shadow-md transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Related Book 4" class="w-full h-full object-cover" data-alt="Book cover with a warm coffee shop aesthetic in golden and purple tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWMVnQAUBbG63idwWYWTvi_vHHzzRI_Fxer61rC5f3cr2ldi51C47W9yxdbgPiwcy16_FuY9utUxDySeHd1tG3CF7e6XxFWwh87r2EvIHI4CkHYuU4SSDhjug76XAy_V8SVRKluw6Fp4PgcvbYi4-3MAhfkZLSPCXMG4unGqyEQDVYkPD5UB5K6LMX9f428JMyyddfnDUXndvu3uwm89LA9M-TDLjxCIIRh3VGZAnDMsAL44pNkqwDZPWLF6AUVrX7T38VvoI5hyg"/>
+</div>
+<div>
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Espresso Love</h4>
+<p class="text-xs text-slate-500">City Lights #1</p>
+</div>
+</div>
+<!-- Related Book 5 -->
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="aspect-[2/3] w-full rounded-lg overflow-hidden bg-slate-200 shadow-md transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Related Book 5" class="w-full h-full object-cover" data-alt="Minimalist romance cover with two hands holding under a purple sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9TD70NIrUnPpzlk-ZhbhQdmuq8UVRzONlOXKuiqDE0Bn_2v5jBlhxh5HuHNI9yesVaazN3YS8lewm_acO5zHpg5fwbXnoMwpKU21F8kg_apDzwsaECPTOvABW7s9KBCTap4zzimd0lPetVgPDRvf3kB1_0zACovWndnvsvXU-5g-WALlXduCFglVkl7eaSloJwq8i4eYID0frHrcsa9oNJlFVL-kEpLSfberPBffMI13gimrM-gNB_4vTSsOWaHZsvhYC_6NE9xc"/>
+</div>
+<div>
+<h4 class="font-bold text-sm text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Tracing Echoes</h4>
+<p class="text-xs text-slate-500">City Lights #2</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Newsletter Section -->
+<footer class="bg-deep-purple text-white py-16 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h3 class="font-serif text-4xl mb-4">Join Elena's Reader Club</h3>
+<p class="text-white/80 text-lg mb-0">Get exclusive chapters, release announcements, and romantic reading recommendations delivered to your inbox.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<input class="flex-1 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:ring-2 focus:ring-primary outline-none" placeholder="Your best email address" type="email"/>
+<button class="px-8 py-4 bg-primary rounded-lg font-bold hover:bg-white hover:text-deep-purple transition-all shadow-xl whitespace-nowrap">Subscribe Now</button>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-white/50">auto_stories</span>
+<p class="text-white/50 text-sm">© 2023 Elena Thorne. All rights reserved.</p>
+</div>
+<div class="flex gap-6 text-white/70">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

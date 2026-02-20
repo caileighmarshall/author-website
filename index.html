@@ -1,21 +1,52 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Caileigh Marshall</title>
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<title>Caileigh Marshall</title>
 		<link rel="icon" type="image/png" href="images/favicon_48.png" sizes="48x48">
 		<link rel="icon" type="image/png" href="images/favicon_16x16.png" sizes="16x16">
 		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any">
 		<link rel="apple-touch-icon" href="images/favicon_180.png">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<!-- Google tag (gtag.js) -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7362ac",
+                        "deep-purple": "#431c7d",
+                        "background-light": "#f7f6f7",
+                        "background-dark": "#17161c",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .book-shadow {
+            box-shadow: 15px 15px 30px rgba(67, 28, 125, 0.15);
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PVLFF4R8ZR"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -24,93 +55,120 @@
 
 	  gtag('config', 'G-PVLFF4R8ZR');
 	</script>
-	<body class="is-preload">
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/selfie.png" alt="" /></span>
-					<h1 id="logo">Caileigh Marshall</h1>
-					<p>Romance Author</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#about" class="active-locked">About</a></li>
-						<li><a href="#books">Books</a></li>
-						<li><a href="#blog">Newsletter</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.instagram.com/caileighmarshallauthor" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-						<li><a href="mailto:info@caileighmarshall.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+<!-- Navigation Header -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<h1 class="text-deep-purple dark:text-primary text-xl font-bold">Caileigh Marshall</h1>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-10 items-center">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#books">Books</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#newsletter">Newsletter</a>
+</nav>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-full h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-heading-plum transition-all shadow-md shadow-primary/20" onclick="location.href='mailto:info@caileighmarshall.com'">
+                            Contact
+                        </button>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto px-6 lg:px-20">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- About Me Section -->
+<section id="about">
+<div class="max-w-[1200px] mx-auto px-6 py-12">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full max-w-[500px] bg-center bg-no-repeat bg-cover rounded-xl shadow-2xl overflow-hidden">
+<img src="images/UFVD8118.jpg" alt="" />
+</div>
+<div class="w-full md:w-1/2 flex flex-col gap-6">
+<h2 class="font-serif text-4xl text-deep-purple dark:text-slate-100 leading-tight mb-4">About Caileigh</h2>
+<p class="text-slate-600 dark:text-slate-700 text-lg leading-relaxed">
+                                    Caileigh Marshall is a software engineer who writes swoonworthy stories about finding love in unlikely places. When not at work, she can be found exploring antique shops, sewing/crafting, watching documentaries, or dreaming about her next vacation.
+                                </p>
+<p class="text-slate-600 dark:text-slate-700 text-lg leading-relaxed">
+                                    Caileigh is represented by Matthew Valdez at <a href="https://www.megibowliteraryagency.com/agents" class="text-primary font-bold hover:underline">Megibow Literary Agency</a>.
+                                </p>
+</div>
+</div>
+</div>
+</section>
 
-				<!-- Main -->
-					<div id="main">
+<!-- Books Gallery Section -->
+<section class="py-12 max-w-[1200px] mx-auto px-6" id="books">
+<div class="flex justify-between items-end mb-12">
+<div class="flex flex-col gap-2">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">The Library</span>
+<h2 class="font-serif text-deep-purple dark:text-slate-100 text-4xl font-bold">Coming Soon</h2>
+</div>
+</div>
 
-						<!-- About -->
-							<section id="about">
-								<div class="container">
-									<h3>About Caileigh</h3>
-									
-									<p>Caileigh Marshall is a software engineer who writes stories about women finding love in unlikely places. When not at work, she can be found exploring antique shops, sewing/crafting, watching documentaries, or dreaming about her next vacation. You can join her newsletter <a href="https://caileighmarshall.substack.com/" class="link">here</a>!</p>
-									
-									<p>Caileigh is represented by Matthew Valdez at <a href="https://www.megibowliteraryagency.com/agents" class="link">Megibow Literary Agency</a>.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Book Card 1 -->
+<div class="group flex flex-col gap-5">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl transition-transform duration-500 group-hover:-translate-y-2">
+<div class="w-full h-full bg-cover bg-center" data-alt="Marie Antoinette"><img src="images/marie-antoinette.jpg"></div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-accent-soft text-xs font-bold uppercase tracking-wider">Historical Romance</span>
+<h3 class="text-heading-plum dark:text-slate-100 text-xl font-bold">Featuring Marie Antoinette</h3>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="group flex flex-col gap-5">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl transition-transform duration-500 group-hover:-translate-y-2">
+<div class="w-full h-full bg-cover bg-center" data-alt="Les Miserables"><img src="images/french-rev.jpg"></div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-accent-soft text-xs font-bold uppercase tracking-wider">Historical Romance</span>
+<h3 class="text-heading-plum dark:text-slate-100 text-xl font-bold">During French Revolution</h3>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="group flex flex-col gap-5">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl transition-transform duration-500 group-hover:-translate-y-2">
+<div class="w-full h-full bg-cover bg-center" data-alt="Yellowstone"><img src="images/yellowstone.jpg"></div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-accent-soft text-xs font-bold uppercase tracking-wider">Contemporary Rom-Com</span>
+<h3 class="text-heading-plum dark:text-slate-100 text-xl font-bold">In Yellowstone National Park</h3>
+</div>
+</div>
+</div>
+</section>
+</main>
 
-								</div>
-							</section>
+<!-- Newsletter Section -->
+<footer class="bg-deep-purple text-white py-12 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[80%_20%] gap-12 items-center" id="newsletter">
+<div>
+<h3 class="font-serif text-4xl mb-4">Join Caileigh's Newsletter</h3>
+<p class="text-white/80 text-lg mb-0">Be the first to know about new releases, read exclusive chapters, and receive personal letters from my writing desk.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<button class="px-8 py-4 bg-primary rounded-lg font-bold hover:bg-white hover:text-deep-purple transition-all shadow-xl whitespace-nowrap" onclick="location.href='https://caileighmarshall.substack.com/'">Subscribe</button>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<p class="text-white/50 text-sm">© 2026 Caileigh Marshall. All rights reserved.</p>
+</div>
+<div class="flex gap-6 text-white/70">
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-all" href="https://www.instagram.com/caileighmarshallauthor">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-all" href="mailto:info@caileighmarshall.com">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</footer>
 
-						<!-- Books -->
-							<section id="books">
-								<div class="container">
-									<h3>Books (Coming Soon)</h3>
-									<div class="features">
-										<article>
-											<div class="image"><img src="images/book1.png" alt=""/></div>
-											<div class="inner">
-												<h4>Historical Romance Novel</h4>
-												<p>Set in 18th century France, the novel features characters like Marie Antoinette and all the gossip, scandals, and yearning that your heart desires.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
-							
-						<!-- Blog -->
-							<section id="blog">
-								<div class="container">
-									<h3>Newsletter</h3>
-									<p>Subscribe for book announcements, writing progress, and exclusive content.</p>
-									<p><iframe src="https://caileighmarshall.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe></p>
-								</div>
-							</section>
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; 2025 All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</div>
+</body></html>
